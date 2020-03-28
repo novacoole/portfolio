@@ -62,8 +62,8 @@ body {
   0%,100%: {
   }
   50% {
-    transform: translate(-150px,0);
-    margin: 50px;
+    transform: translate(-300px,0);
+    margin: 100px;
   }
 }
 
