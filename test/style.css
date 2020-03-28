@@ -1,0 +1,19 @@
+.gday {
+  position: relative;
+}
+
+.gday:hover {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: fancy-anime;
+  animation-duration: 4s;
+}
+
+@keyframes fancy-anime {
+  0%,100% {
+    top: 0px;
+  }
+  50% {
+    top:100px;
+  }
+}
+
