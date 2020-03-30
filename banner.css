@@ -1,22 +1,23 @@
-body {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#banner {
+  margin-bottom: 60px;
 }
 
 #circle {
-  width: 500px;
-  height: 500px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
   background-color:  rgb(240, 240, 68);
   border-radius: 50%;
 }
 
 .fancy-container {
-  top: 250px;
+  position: relative;
   height: 100px;
-  width:500px;
+  width: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -45,17 +46,18 @@ body {
 #circle:hover {
   animation-name: circle-anime;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes circle-anime {
-  0%,100% {background-color:  rgb(240, 240, 68);}
-  50% {background: coral;}
+  100% {background: peachpuff;}
 }
 
 .fancy:hover{
   animation-name: fancy-anime;
   animation-duration: 1s;
-  transition: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes fancy-anime {
@@ -67,7 +69,7 @@ body {
 }
 
 #container1 .fancy {
-  background: linear-gradient(to bottom, crimson, rgba(220, 20, 60, 0.1));
+  background: linear-gradient(to bottom, coral, rgba(220, 20, 60, 0.1));
 }
 
 
