@@ -1,4 +1,5 @@
 @import "./banner.css";
+@import "./card.css";
 
 * {
   font-family: 'Roboto Mono';
@@ -45,35 +46,8 @@ body {
   flex-direction: column;
 }
 
-.card-container {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-gap: 40px 40px;
-}
-
-#skills-card-container {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.card {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  box-shadow: 5px 5px 15px coral, -5px -5px 15px cornflowerblue ;
-  background: white;
-  font-size: 80px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 #contact {
   text-align: center;
-}
-#skills .card:hover {
-  animation: card-hover;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes card-hover {
@@ -81,7 +55,6 @@ body {
     height: 170px;
     width: 170px;
     font-size: 140px;
-    /* transform: skewY(5deg); */
   }
 }
 
@@ -133,15 +106,6 @@ nav {
 
 #profile {
   box-shadow: 10px 10px 30px rgb(240, 240, 68), -10px -10px 30px rgb(240, 240, 68) ;
-}
-#projects-card-container  {
-  grid-template-columns: repeat(3, 1fr); 
-}
-
-#projects .card {
-  height: 223.33px;
-  width: 223.33px;
-  font-size: 30px;
 }
 
 .section {
