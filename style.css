@@ -24,10 +24,6 @@ nav a, .standard-grid a {
   justify-self: flex-end;
 }
 
-#blog2 img {
-  justify-self: flex-start;
-  align-self: flex-start;
-}
 
 body {
   /* background-color:rgb(245, 163, 97); */
