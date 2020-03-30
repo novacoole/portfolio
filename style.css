@@ -17,6 +17,7 @@ nav a, .standard-grid a {
 .standard-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-width: 400px;
 }
 
 .standard-grid img, div {
