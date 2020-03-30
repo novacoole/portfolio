@@ -8,24 +8,18 @@ a {
   border-bottom: 1px solid black;
 }
 
-nav {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  background-color: white;
+#about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#navdiv {
-  position: relative;
-  display: inline;
-  width: 200px;
-  left: 50%;
-  background-color: coral;
+#about-grid img {
+  align-self: center;
+  justify-self: flex-end;
 }
 
 body {
-  top: 10px;
-  height: 100vh;
+  background-color: rgba(255, 180, 150, 1);
   width: 100%;
   display: flex;
   align-items: center;
@@ -33,6 +27,72 @@ body {
   flex-direction: column;
 }
 
-div {
-  width: 900px;
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 40px 40px;
 }
+
+.card {
+  width: 150px;
+  box-shadow: 10px 10px 15px coral, -10px -10px 15px cornflowerblue ;
+  height: 100px;
+  background: rgb(255, 199, 177);
+}
+
+.card:hover {
+  animation: card-hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes card-hover {
+  100% {
+    height: 250px;
+    /* transform: skewY(5deg); */
+  }
+}
+
+h1 {
+  font-size: 80px;
+  margin: 20px;
+}
+
+h2 {
+  margin: 30px 0 50px 0;
+}
+h2:hover {
+  animation-name: h2-hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes h2-hover {
+  100% {
+    background: -webkit-linear-gradient(coral, cornflowerblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(100px,0);
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0 20px 0;
+  background-color: rgb(255, 199, 177);
+}
+
+#navdiv {
+  position: relative;
+  display: inline;
+  left: 58%;
+}
+
+.section {
+  width: 800px;
+}
+
+
