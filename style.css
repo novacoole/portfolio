@@ -29,9 +29,9 @@ nav a, .standard-grid a {
   justify-self: flex-end;
 }
 
-/* .reverse-grid {
-  justify-self: flex-start;
-} */
+.reverse-blog-list {
+  justify-self: flex-start !important;
+}
 
 body {
   /* background-color:rgb(245, 163, 97); */
