@@ -1,3 +1,5 @@
+/* This .css document outlines the styling for the elements which make up the animated banner at the top of my main page. */
+
 #banner {
   margin-bottom: 60px;
 }
@@ -53,25 +55,6 @@
   100% {background: peachpuff;}
 }
 
-/* #container1 {
-  animation-name: expand;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-  margin: 0 50px 0 50px;
-} */
-
-/* @keyframes expand {
-  0% {
-    top: 500px;
-    right: 500px;
-  }
-  100% {
-    
-  }
-} */
-
-
 .fancy:hover{
   animation-name: fancy-anime;
   animation-duration: 1s;
@@ -90,7 +73,6 @@
 #container1 .fancy {
   background: linear-gradient(to bottom, coral, rgba(220, 20, 60, 0.1));
 }
-
 
 #container2 .fancy {
   background: linear-gradient(to bottom, cornflowerblue,rgba(100, 148, 237, 0.1));

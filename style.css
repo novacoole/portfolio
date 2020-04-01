@@ -19,31 +19,37 @@ nav a, .standard-grid a {
 
 
 .standard-grid {
+  /* This class is a grid with two columns which allow me to format images beside text throughout the site. */
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-width: 400px;
 }
 
-.standard-grid img, div {
+.standard-grid figure, article {
   align-self: center;
   justify-self: flex-end;
 }
 
-.reverse-blog-list {
+/* .reverse-blog-list {
   justify-self: flex-start !important;
-}
+} */
 
 body {
-  /* background-color:rgb(245, 163, 97); */
-  top: 30px;
-  /* height: calc(100vh - 40px); */
-  position: relative;
+  width: 100vw;
   background: white;
-  width: 100%;
+}
+
+main, body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+main {
+  top: 30px;
+  position: relative;
+  width: 100%;
 }
 
 #contact {
@@ -51,6 +57,7 @@ body {
 }
 
 @keyframes card-hover {
+  /* This animation allows the cards in my skills section to enlarge upon hovering. */
   100% {
     height: 170px;
     width: 170px;
@@ -61,7 +68,6 @@ body {
 h1 {
   text-align: center;
   font-size: 80px;
-  margin: 20px;
   z-index: 3;
 }
 
@@ -81,6 +87,7 @@ h2 {
 }
 
 @keyframes h2-hover {
+  /* This animation allows the headings of each section to animate on hover. */
   100% {
     background: -webkit-linear-gradient(coral, cornflowerblue);
     -webkit-background-clip: text;
@@ -95,6 +102,7 @@ h3 {
 }
 
 nav {
+  /* This is my navigation bar. */
   position: fixed;
   z-index: 4;
   top: 0px;
@@ -103,19 +111,23 @@ nav {
   background-color: white;
 }
 
-#navdiv {
-  position: relative;
-  display: inline;
-  left: 50%;
-}
-
 #profile {
+  /* This is my main profile photo of myself. */
   box-shadow: 10px 10px 30px rgb(240, 240, 68), -10px -10px 30px rgb(240, 240, 68) ;
 }
 
-.section {
+section {
   width: 800px;
 }
 
+small {
+  font-size: 10px;
+}
+
+footer {
+  text-align: center;
+  width: 400px;
+  margin-top: 40px;
+}
 
 
