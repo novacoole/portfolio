@@ -50,7 +50,8 @@
   }
 
   .card-container {
-    grid-gap: 50px 25px;
+    justify-content: space-evenly;
+    margin: 20px;
   }
 
   #projects .card {

@@ -13,7 +13,7 @@ a {
 a:hover {
   font-size: 1.2em;
 }
-nav a, .standard-grid a {
+nav a, .standard-grid a{
   border-bottom: 1px solid black;
 }
 
@@ -135,6 +135,12 @@ footer {
   margin-top: 40px;
 }
 
+#gpg-link {
+  display: none;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  color: coral;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -145,23 +151,41 @@ footer {
   h2, #contact h2 {
     text-align: center;
   }
+  
+  #contact {
+    font-size: 12px;
+  }
 
   nav {
-  width: 100vw;
-  left: 10px;
+    margin: 0;
+    width: 100vw;
+    left: 0px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  figure {
+    margin: 40px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
   }
 
   #profile {
-  width: 300px;
-  margin: 40px 0 20px 0;
+    width: calc(100vw - 100px);
+    margin: auto;
   }
 
-  body, section {
+  body, section{
     width: 100vw;
   }
 
-  p {
-    width: calc(100vw - 80px);
+  p, pre {
+    width: calc(100vw - 50px);
+  }
+
+  pre {
+    font-size: ;
   }
 
   footer {
@@ -175,5 +199,9 @@ footer {
 
   #gpg {
     display: none;
+  }
+
+  #gpg-link {
+    display: block;
   }
 }
