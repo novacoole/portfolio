@@ -131,3 +131,27 @@ footer {
 }
 
 
+@media screen and (max-width: 600px) {
+
+  nav {
+  width: 600px;
+  left: 10px;
+  }
+
+  #profile {
+  width: 300px;
+  margin: 40px 0 20px 0;
+  }
+
+  section, p {
+    width: 400px;
+  }
+
+  .standard-grid {
+    display: block;
+  }
+
+  #gpg {
+    display: none;
+  }
+}

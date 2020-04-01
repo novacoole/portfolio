@@ -78,3 +78,34 @@
   background: linear-gradient(to bottom, cornflowerblue,rgba(100, 148, 237, 0.1));
 }
 
+@media screen and (max-width: 600px) {
+
+  #circle {
+    width: 230px;
+    height: 230px;
+  }
+
+  #container1 {
+    top: 60px;
+  }
+
+  #container2 {
+    top: 87px;
+  }
+
+  .fancy-container {
+    right: -2%;
+    width: 300px;
+    height: 80px;
+  }
+
+
+  .fancy {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+  }
+
+  
+
+}
