@@ -1,6 +1,5 @@
 @import "./banner.css";
 @import "./card.css";
-
 @font-face {
   font-family: 'Roboto Mono';
   font-style: normal;
@@ -37,12 +36,16 @@ nav a, .standard-grid a{
   justify-self: flex-end;
 }
 
+.standard-grid.reverse figure {
+  justify-self: flex-start;
+}
+
 /* .reverse-blog-list {
   justify-self: flex-start !important;
 } */
 
 body {
-  width: 100vw;
+  width: calc(100vw);
   background: white;
 }
 
@@ -65,6 +68,14 @@ main {
 }
 #contact {
   text-align: center;
+}
+
+.blog-post img {
+  margin-bottom: 20px;
+}
+
+figure {
+  margin: 0;
 }
 
 @keyframes card-hover {
@@ -121,14 +132,21 @@ nav {
   position: fixed;
   z-index: 4;
   top: 0px;
-  width: 100%;
+  width: 800px;
   padding: 10px 0 10px 0;
   background-color: white;
 }
 
+#navdiv {
+  position: relative;
+  text-align: center;
+}
+
 #profile {
   /* This is my main profile photo of myself. */
-  width: 350px;
+  position: relative;
+  right: 30px;
+  width: 300px;
   box-shadow: 10px 10px 30px rgb(240, 240, 68), -10px -10px 30px rgb(240, 240, 68) ;
 }
 
@@ -143,7 +161,7 @@ small {
 footer {
   display: relative;
   text-align: center;
-  width: 400px;
+  width: 500px;
   margin-top: 40px;
 }
 
@@ -164,6 +182,10 @@ footer {
     text-align: center;
   }
   
+  .blog-post img {
+    width: calc(100% - 20px);
+  }
+
   #contact {
     font-size: 12px;
   }
@@ -184,8 +206,13 @@ footer {
   }
 
   #profile {
-    width: calc(100vw - 130px);
-    margin: auto;
+    position: static;
+    width: calc(100vw - 180px);
+  }
+
+  main, header {
+    position: relative;
+    top: 30px;
   }
 
   body, section{
@@ -214,6 +241,8 @@ footer {
   }
 
   #gpg-link {
+    margin-top: 20px;
     display: block;
+    font-size: 18px;
   }
 }
