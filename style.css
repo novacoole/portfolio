@@ -1,13 +1,17 @@
 @import "./banner.css";
 @import "./card.css";
 
-* {
+@font-face {
   font-family: 'Roboto Mono';
 }
 
-a {
-  text-decoration: none;
-  color: black;
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
 }
 
 a:hover {
@@ -22,7 +26,6 @@ nav a, .standard-grid a{
   /* This class is a grid with two columns which allow me to format images beside text throughout the site. */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-width: calc(100% - 500px);
 }
 
 .standard-grid figure, article {
@@ -117,11 +120,12 @@ nav {
 
 #profile {
   /* This is my main profile photo of myself. */
+  width: 350px;
   box-shadow: 10px 10px 30px rgb(240, 240, 68), -10px -10px 30px rgb(240, 240, 68) ;
 }
 
 section {
-  width: calc(100vw - 500px);
+  width: 800px;
 }
 
 small {
@@ -172,7 +176,7 @@ footer {
   }
 
   #profile {
-    width: calc(100vw - 100px);
+    width: calc(100vw - 130px);
     margin: auto;
   }
 
