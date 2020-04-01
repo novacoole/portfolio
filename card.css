@@ -50,7 +50,7 @@
   }
 
   .card-container {
-    grid-gap: 15px 15px;
+    grid-gap: 50px 25px;
   }
 
   #projects .card {
@@ -60,7 +60,7 @@
   }
 
   #projects-card-container  {
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
 }
 
 }

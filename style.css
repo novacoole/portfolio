@@ -80,6 +80,10 @@ h2 {
   width: 100%;
 }
 
+#contact h2 {
+  text-align: start;
+}
+
 .h2-wrapper:hover h2 {
   animation-name: h2-hover;
   animation-duration: 1s;
@@ -125,6 +129,7 @@ small {
 }
 
 footer {
+  display: relative;
   text-align: center;
   width: 400px;
   margin-top: 40px;
@@ -133,8 +138,16 @@ footer {
 
 @media screen and (max-width: 600px) {
 
+  * {
+    margin: auto; 
+  }
+
+  h2, #contact h2 {
+    text-align: center;
+  }
+
   nav {
-  width: 600px;
+  width: 100vw;
   left: 10px;
   }
 
@@ -143,8 +156,17 @@ footer {
   margin: 40px 0 20px 0;
   }
 
-  section, p {
-    width: 400px;
+  body, section {
+    width: 100vw;
+  }
+
+  p {
+    width: calc(100vw - 80px);
+  }
+
+  footer {
+    display: none;
+    width: 150px;
   }
 
   .standard-grid {
