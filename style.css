@@ -13,16 +13,16 @@ a {
 a:hover {
   font-size: 1.2em;
 }
+
 nav a, .standard-grid a{
   border-bottom: 1px solid black;
 }
-
 
 .standard-grid {
   /* This class is a grid with two columns which allow me to format images beside text throughout the site. */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-width: 400px;
+  column-width: calc(100% - 500px);
 }
 
 .standard-grid figure, article {
@@ -120,8 +120,8 @@ nav {
   box-shadow: 10px 10px 30px rgb(240, 240, 68), -10px -10px 30px rgb(240, 240, 68) ;
 }
 
-section {
-  width: 800px;
+section, #about {
+  width: calc(100vw - 500px);
 }
 
 small {
