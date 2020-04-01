@@ -59,6 +59,10 @@ main {
   width: 100%;
 }
 
+.icon {
+  width: 70px;
+  height: 70px;
+}
 #contact {
   text-align: center;
 }
