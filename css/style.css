@@ -122,10 +122,10 @@ h2 {
 @keyframes h2-hover {
   /* This animation allows the headings of each section to animate on hover. */
   100% {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(coral, cornflowerblue);
     transform: translate(100px, 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
