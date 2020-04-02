@@ -14,7 +14,7 @@
 }
 
 * {
-  color: black;
+  color: rgb(190, 190, 190);
   font-family: "Roboto Mono";
 }
 
@@ -27,7 +27,7 @@ a:hover {
 
 nav a,
 .standard-grid a {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(190, 190, 190)
 }
 
 .standard-grid {
@@ -51,7 +51,7 @@ article {
 } */
 
 body {
-  background: white;
+  background: rgb(73, 73, 73);
   width: calc(100vw);
 }
 
@@ -72,6 +72,7 @@ main {
 .icon {
   height: 70px;
   width: 70px;
+  box-shadow: 3px 3px 5px white, -3px -3px 5px white;
 }
 #contact {
   text-align: center;
@@ -122,9 +123,6 @@ h2 {
 @keyframes h2-hover {
   /* This animation allows the headings of each section to animate on hover. */
   100% {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(coral, cornflowerblue);
     transform: translate(100px, 0);
   }
 }
@@ -136,7 +134,7 @@ h3 {
 
 nav {
   /* This is my navigation bar. */
-  background-color: white;
+  background-color: rgb(73, 73, 73);
   padding: 10px 0 10px 0;
   position: fixed;
   top: 0px;
