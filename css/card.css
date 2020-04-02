@@ -1,25 +1,27 @@
-
 .card-container {
+  grid-gap: 40px 40px;
+  /* main card container class */
   display: grid;
   grid-auto-rows: auto;
-  grid-gap: 40px 40px;
 }
 
 #skills-card-container {
+  /* for my language logos */
   grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  box-shadow: 5px 5px 15px coral, -5px -5px 15px cornflowerblue ;
+  align-items: center;
   background: white;
+  box-shadow: 5px 5px 15px coral, -5px -5px 15px cornflowerblue;
+  /* individual grid elements. */
+  display: flex;
   font-size: 80px;
-  text-align: center;
+  height: 150px;
   justify-content: space-evenly;
   justify-items: center;
-  align-items: center;
+  text-align: center;
+  width: 150px;
 }
 
 #skills .card:hover {
@@ -28,21 +30,21 @@
   animation-fill-mode: forwards;
 }
 
-#projects-card-container  {
-  grid-template-columns: repeat(3, 1fr); 
+#projects-card-container {
+  /* cards for my projects */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #projects .card {
+  font-size: 30px;
   height: 223.33px;
   width: 223.33px;
-  font-size: 30px;
 }
 
 @media screen and (max-width: 600px) {
-
   .card {
-    width: 130px;
     height: 130px;
+    width: 130px;
   }
 
   #skills-card-container {
@@ -55,13 +57,12 @@
   }
 
   #projects .card {
+    font-size: 20px;
     height: 130px;
     width: 130px;
-    font-size: 20px;
   }
 
-  #projects-card-container  {
-  grid-template-columns: 1fr 1fr; 
-}
-
+  #projects-card-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }

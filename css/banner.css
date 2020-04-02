@@ -5,68 +5,70 @@
 }
 
 #circle {
+  align-items: center;
+  background-color: rgb(240, 240, 68);
+  border-radius: 50%;
+  display: flex;
+  height: 300px;
+  justify-content: center;
   position: relative;
   top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 300px;
-  height: 300px;
-  background-color:  rgb(240, 240, 68);
-  border-radius: 50%;
 }
 
 .fancy-container {
-  position: relative;
-  height: 100px;
-  width: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  height: 100px;
+  position: relative;
+  width: 500px;
 }
 
 #container1 {
-  transform: skewY(20deg);
+  background: rgba(400, 0, 0, 0.1);
   position: absolute;
+  transform: skewY(20deg);
   z-index: 1;
-  background: rgba(400,0,0,0.1);
 }
 
 #container2 {
-  transform: skewY(-20deg);
+  background: rgba(100, 0, 0, 0.1);
   position: absolute;
+  transform: skewY(-20deg);
   z-index: 1;
-  background: rgba(100,0,0,0.1);
 }
 
 .fancy {
   height: 100px;
-  width: 100px;
   margin: 10px;
   position: relative;
+  width: 100px;
 }
 
 #circle:hover {
-  animation-name: circle-anime;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-name: circle-anime;
 }
 
 @keyframes circle-anime {
-  100% {background: peachpuff;}
+  100% {
+    background: peachpuff;
+  }
 }
 
-.fancy:hover{
-  animation-name: fancy-anime;
+.fancy:hover {
   animation-duration: 1s;
-  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-name: fancy-anime;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fancy-anime {
   0%,100%: {
   }
   50% {
-    transform: translate(0,-50px);
+    transform: translate(0, -50px);
   }
 }
 
@@ -75,14 +77,17 @@
 }
 
 #container2 .fancy {
-  background: linear-gradient(to bottom, cornflowerblue,rgba(100, 148, 237, 0.1));
+  background: linear-gradient(
+    to bottom,
+    cornflowerblue,
+    rgba(100, 148, 237, 0.1)
+  );
 }
 
 @media screen and (max-width: 600px) {
-
   #circle {
-    width: 230px;
     height: 230px;
+    width: 230px;
   }
 
   #container1 {
@@ -94,18 +99,14 @@
   }
 
   .fancy-container {
+    height: 80px;
     right: -2%;
     width: 300px;
-    height: 80px;
   }
-
 
   .fancy {
     height: 80px;
-    width: 80px;
     margin: 5px;
+    width: 80px;
   }
-
-  
-
 }
