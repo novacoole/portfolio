@@ -181,6 +181,11 @@ footer {
   h2, #contact h2 {
     text-align: center;
   }
+
+  h3 {
+    margin: 15px;
+    text-align: center;
+  }
   
   .blog-post img {
     width: calc(100% - 20px);
@@ -228,8 +233,7 @@ footer {
   }
 
   footer {
-    display: none;
-    width: 150px;
+    width: 300px;
   }
 
   .standard-grid {
