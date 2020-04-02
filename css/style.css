@@ -14,7 +14,7 @@
 }
 
 * {
-  color: rgb(190, 190, 190);
+  color: rgb(255, 0, 140);
   font-family: "Roboto Mono";
 }
 
@@ -27,7 +27,7 @@ a:hover {
 
 nav a,
 .standard-grid a {
-  border-bottom: 1px solid rgb(190, 190, 190)
+  border-bottom: 1px solid rgb(255, 0, 140);
 }
 
 .standard-grid {
@@ -51,7 +51,7 @@ article {
 } */
 
 body {
-  background: rgb(73, 73, 73);
+  background: rgb(51, 255, 0);
   width: calc(100vw);
 }
 
@@ -72,7 +72,7 @@ main {
 .icon {
   height: 70px;
   width: 70px;
-  box-shadow: 3px 3px 5px white, -3px -3px 5px white;
+  box-shadow: 3px 3px 5px rgb(255, 208, 0), -3px -3px 5px rgb(255, 208, 0);
 }
 #contact {
   text-align: center;
@@ -134,7 +134,7 @@ h3 {
 
 nav {
   /* This is my navigation bar. */
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(51, 255, 0);
   padding: 10px 0 10px 0;
   position: fixed;
   top: 0px;
@@ -149,8 +149,8 @@ nav {
 
 #profile {
   /* This is my main profile photo of myself. */
-  box-shadow: 10px 10px 30px rgb(240, 240, 68),
-    -10px -10px 30px rgb(240, 240, 68);
+  box-shadow: 30px 30px 100px rgb(240, 240, 68),
+    -30px -30px 100px rgb(240, 240, 68);
   position: relative;
   right: 30px;
   width: 300px;
