@@ -65,7 +65,7 @@
 }
 
 @keyframes fancy-anime {
-  0%,100%: {
+  0%,100% {
   }
   50% {
     transform: translate(0, -50px);

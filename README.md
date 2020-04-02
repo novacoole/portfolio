@@ -1,10 +1,11 @@
 # **my portfolio**
 
-## url: https://nervous-poitras-65b5ae.netlify.com/
+## url: <https://nervous-poitras-65b5ae.netlify.com/>
 
-## repo: github.com/novacoole/portfolio
+## repo: <https://github.com/novacoole/portfolio>
 
 ---
+
 ### **functionality / features**
 
 This is my placeholder portfolio website. The purpose of this site is to advertise myself to potential employers and collaboraters.
@@ -12,9 +13,9 @@ It has a very basic layout, with the majority of content (about me, skills, proj
 
 The site is comprised of html and css documents. I utilised flexbox and css-grid to position most elements and to create some 'card' sections. I attempted some basic css animation in an attempt to "beautify" the page and I have used netlify to deploy my site via github.
 
-###  **sitemap**
+### **sitemap**
 
-```
+```bash
 .
 ├── blog
 │   ├── blog.html
@@ -39,7 +40,9 @@ The site is comprised of html and css documents. I utilised flexbox and css-grid
 └── README.md
 
 4 directories, 17 files
+
 ```
+
 ![Site map diagram](/img/sitemap.png "Site map diagram")
 
 ### **screenshots**
@@ -57,3 +60,7 @@ The site is comprised of html and css documents. I utilised flexbox and css-grid
 ### blog post
 
 ![Blog post.](/img/Screenshot4.png "Blog post.")
+
+### **wireframes**
+
+content
