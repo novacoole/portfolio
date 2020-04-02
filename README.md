@@ -32,18 +32,25 @@ The site is comprised of html and css documents. I utilised flexbox and css-grid
 │   ├── novacoole.asc
 │   └── resume.pdf
 ├── img
+│   ├── des_wireframe.png
 │   ├── github.png
 │   ├── linkedin.png
 │   ├── mastadon.png
-│   └── profile.png
+│   ├── mob_wireframe.png
+│   ├── profile.png
+│   ├── Screenshot1.png
+│   ├── Screenshot2.png
+│   ├── Screenshot3.png
+│   ├── Screenshot4.png
+│   └── sitemap.png
 ├── index.html
 └── README.md
 
-4 directories, 17 files
+4 directories, 25 files
 
 ```
 
-![Site map diagram](/img/sitemap.png "Site map diagram")
+![Site map diagram](/img/sitemap.png "Site map diagram.")
 
 ### **screenshots**
 
@@ -63,4 +70,10 @@ The site is comprised of html and css documents. I utilised flexbox and css-grid
 
 ### **wireframes**
 
-content
+### desktop
+
+![Desktop Wireframes](/img/des_wireframe.png "Desktop Wireframes.")
+
+### mobile
+
+![Mobile Wireframes](/img/mob_wireframe.png "Mobile Wireframes.")
