@@ -1,5 +1,5 @@
-@import "./banner.css";
-@import "./card.css";
+@import "banner.css";
+@import "card.css";
 @font-face {
   src: local("Roboto Mono"), local("RobotoMono-Regular"),
     url(https://fonts.gstatic.com/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2)
