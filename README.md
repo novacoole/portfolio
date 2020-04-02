@@ -9,9 +9,11 @@
 ### **functionality / features**
 
 This is my placeholder portfolio website. The purpose of this site is to advertise myself to potential employers and collaboraters.
-It has a very basic layout, with the majority of content (about me, skills, projects, contact) on one page seperated into \<div> sections. The blog list and blog pages have been created as seperate html documents.
+It has a very basic layout, with the majority of content ([about me](index.html#about), [skills](index.html#skills), [projects](index.html#projects), [contact](index.html#contact) on one page seperated into \<div> sections. The [blog list](blog/blog.html) and [blog pages](blog/blog-post-1.html) have been created as seperate html documents.
 
-The site is comprised of html and css documents. I utilised flexbox and css-grid to position most elements and to create some 'card' sections. I attempted some basic css animation in an attempt to "beautify" the page and I have used netlify to deploy my site via github.
+The site is comprised of html and css documents. I created a fixed navigation bar which links to external documents such as my blog and [resume](/doc/resume.pdf). I utilised flexbox and css-grid to position most elements and to create some ['card'](/css/card.css) sections. I attempted some basic css animation in an attempt to "beautify" the page, as well as to create a [banner](css/banner.css) for the main header.
+
+I have used netlify to deploy my site via github, and I have utilised a sha256 hash to implement subresource integrity for my main .css file.
 
 ### **sitemap**
 
@@ -43,7 +45,7 @@ The site is comprised of html and css documents. I utilised flexbox and css-grid
 │   ├── Screenshot3.png
 │   ├── Screenshot4.png
 │   └── sitemap.png
-├── index.html
+├── index.html  
 └── README.md
 
 4 directories, 25 files
@@ -60,20 +62,26 @@ The site is comprised of html and css documents. I utilised flexbox and css-grid
 
 ![Main page bottom.](/img/Screenshot2.png "Main page bottom.")
 
-### blog list
+#### blog list
 
 ![Blog list.](/img/Screenshot3.png "Blog list.")
 
-### blog post
+#### blog post
 
 ![Blog post.](/img/Screenshot4.png "Blog post.")
 
 ### **wireframes**
 
-### desktop
+#### desktop
 
 ![Desktop Wireframes](/img/des_wireframe.png "Desktop Wireframes.")
 
-### mobile
+#### mobile
 
 ![Mobile Wireframes](/img/mob_wireframe.png "Mobile Wireframes.")
+
+---
+
+thanks for reading
+
+\- nova
